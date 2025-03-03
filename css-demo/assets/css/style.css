@@ -11,6 +11,15 @@ html {
     box-sizing: inherit;
   }
 
+
+/*  ---------------Utility Classes------------  */
+.container{
+    width:80vw;
+    max-width: 960;
+    margin: 40px auto;
+}
+
+
 body { 
     font-family: "Arsenal SC", serif;
     font-weight: 400;
@@ -19,8 +28,8 @@ body {
 }
 
 header.primary{
-    background-color:#F08843;
-    color:#ffffff;
+    background-color:#F5C990;
+    color:#F06943;
     text-align:center;
     text-shadow: 1px 1px 0px #000;
     /* long form */
@@ -30,11 +39,10 @@ header.primary{
     padding-left: 40px;
     /* Single value, short hand */
     padding: 40px;
-    /* T, R, L, B */
+    /* T, R, B, L */
     padding: 20px 40px 20px 40px;
-    /* Two values top/bottom / L/R */
+    /* Two values top,bottom / L,R */
     padding: 20px 40px;
-    border:5px solid red;
 }
 
 header.primary h1{
@@ -45,7 +53,7 @@ header.primary h1{
 }
 
 header.primary h1 a{
-    color:white;
+    color:#F06943;
     text-decoration:none;
 }
 
@@ -55,12 +63,15 @@ header.primary h2{
     letter-spacing:2px;
 }
 
-nav.primary{
-    
-}
+nav.primary{}
 
 nav.primary ul{
     padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    max-width: 960;
+    margin:30px auto;
 }
 
 nav.primary ul li{
@@ -68,5 +79,46 @@ nav.primary ul li{
 }
 
 nav.primary ul li a{
-    color:white;
+    color:#FFF;
+    font-size: 1.1rem;
+    text-decoration:none;
+    border: 4px inset #F06943;
+    padding: 4px 8px;
+    background-color:rgba(238, 165, 70, 0.4);
+    border-radius:30px;
+    transition: .9s;
 }
+
+nav.primary ul li a:hover{
+    background-color:rgb(237, 175, 94, 1);
+}
+
+#content{
+
+}
+
+#content h2{
+    color : #F0A543;
+    border-bottom: 5px dotted #F06943;
+}
+
+#content h3{
+    color: #F06943;
+    border-left: 5px double #F0D043;
+    padding:0px 0px 0px 10px;
+}
+
+@media screen and (max-width:700px){
+    nav.primary ul{
+        flex-direction: column;
+        gap:10px;
+        max-width:200px;
+        margin:20px auto;
+    }
+
+    nav.primary ul li a{
+        display:block;
+    }
+
+}
+
