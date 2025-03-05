@@ -19,6 +19,11 @@ html {
     margin: 40px auto;
 }
 
+/*  ---------------Utility Classes------------  */
+
+img{
+    max-width:100%;
+}
 
 body { 
     font-family: "Arsenal SC", serif;
@@ -107,6 +112,68 @@ nav.primary ul li a:hover{
     border-left: 5px double #F0D043;
     padding:0px 0px 0px 10px;
 }
+
+#blog{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:20px;
+    border-top:2px solid #000;
+    padding-top:40px;
+}
+
+#blog article.post{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+    padding:10;
+    font-size:.9rem;
+    border-radius:4px;
+    transition:.9;
+}
+
+#blog article.post:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .8);
+}
+
+figure{
+    margin:0;
+
+}
+
+figcaption, time{
+    text-transform:uppercase;
+    font-size:.7rem;
+    color:gray;
+}
+
+#blog article.post{
+    font-size:.8rem;
+}
+
+aside[role="complementary"] {
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px;
+}
+
+aside .container{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+aside .container a{
+    color: white;
+}
+
+aside .container a:last-child{
+    display:block;
+    text-align:right;
+}
+
+aside article footer{
+    display:none;
+}
+
 
 @media screen and (max-width:700px){
     nav.primary ul{
