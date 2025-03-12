@@ -19,6 +19,28 @@ html {
     margin: 40px auto;
 }
 
+.img-right{
+    float:right;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    margin:10px 0 10px 20px;
+    max-width: 20vw;
+}
+.img-left{
+    float:left;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    margin:10px 20px 10px 0;
+    max-width: 30vw;
+}
+.img-center{
+    display:block;
+    margin:10 px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+
+
 /*  ---------------Utility Classes------------  */
 
 img{
@@ -34,6 +56,7 @@ body {
 
 header.primary{
     background-color:#F5C990;
+    background-image: url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%239C92AC'  fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     color:#F06943;
     text-align:center;
     text-shadow: 1px 1px 0px #000;
@@ -98,6 +121,34 @@ nav.primary ul li a:hover{
     background-color:rgb(237, 175, 94, 1);
 }
 
+table{
+    width:100%;
+    border:1px solid #c0c0c0;
+    border-collapse:collapse;
+}
+caption{
+    font-weight: bold;
+    margin: 10px;
+    font-size:1.3rem;
+
+}
+tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+td:nth-child(n+2){
+    text-align:right;
+}
+
+th{
+    background-color: #172635;
+    color: #ffffff;
+    padding:7.5px;
+}
+td{
+    border:1px solid #c0c0c0;
+}
+
 #content{
 
 }
@@ -119,7 +170,8 @@ nav.primary ul li a:hover{
     justify-content:center;
     gap:20px;
     border-top:2px solid #000;
-    padding-top:40px;
+    padding:40px 0;
+    border-bottom:1px solid #cccccc;
 }
 
 #blog article.post{
@@ -150,7 +202,7 @@ figcaption, time{
 }
 
 aside[role="complementary"] {
-    background-color: darkblue;
+    background-color: #F06943;
     color: #fff;
     padding: 20px;
 }
@@ -174,7 +226,65 @@ aside article footer{
     display:none;
 }
 
+#colophon{
+    background-color:#F5C990;
+    padding:1px;
+    text-align:center;
+    font-size:1.3rem;
+    text-shadow: 1px 1px #0000007f;
+}
 
+#practice h2{
+    color: #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+
+#practice a{
+    color: #3b638b;
+    transition:.5;
+}
+
+#practice a:hover{
+    text-decoration:none;
+}
+
+#practice ol{
+    list-style-type:lower-roman;
+  }
+  
+  #practice ul li ul li{
+    list-style-type:square;
+  }
+  
+  #practice dl dt{
+    font-weight:bold;
+  }
+  
+  #practice dl dd{
+    margin:0;
+  }
+  
+  dd + dt{
+  margin-top:20px;
+  }
+  
+  #practice blockquote{
+    border: 4px double #c0c0c0;
+    padding:20px 40px;
+    margin:40px 80px;
+    border-radius:30px 0;
+    background-color: #3b638b;
+    color:#fff;
+    text-shadow:1px 1px #000;
+  }
+  
+  #practice blockquote cite{
+    display:block;
+    text-align:right;
+    font-size:.8rem;
+    margin-top:1rem;
+  }
+  
 @media screen and (max-width:700px){
     nav.primary ul{
         flex-direction: column;
