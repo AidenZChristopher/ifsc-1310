@@ -31,26 +31,46 @@
       margin-right: auto;
       margin-left: auto;
       text-shadow: 2px 2px #000;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 30px 15px;
+      place-items: center;
     }
     #navy {
       background-color: #001f3f;
-      position:absolute;
-      top:0;
-      left:0;
       width: 175px;
       height: 150px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
     }
     #teal {
       background-color: #39CCCC;
+      width: 175px;
+      height: 150px;
+      grid-column: 2 / 2;
+      grid-row: 1 / 2;
     }
     #blue {
       background-color: #0074D9;
+      width: 175px;
+      height: 150px;
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
     }
     #aqua {
       background-color: #7FDBFF;
+      width: 175px;
+      height: 150px;
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
     }
     #footer {
       background-color: #666;
+      grid-column: 1 / -1;
+      padding-left: 22rem;
+      padding-right: 22rem;
+      margin: 20px;
     }
     h1 {
       color: #000;
