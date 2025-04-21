@@ -7,7 +7,6 @@
 */
 
 /* ---------------Box Sizing----------------- */
-
 html {
   box-sizing: border-box;
 }
@@ -17,13 +16,11 @@ html {
   box-sizing: inherit;
 }
 
-
 /* ----- Utility Styles ---- */
-
 .container {
-  width: 80vw;
+  width: 90vw;         /* increased from 80vw */
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 1200px;   /* increased from 900px */
 }
 
 .img-right {
@@ -31,7 +28,7 @@ html {
   margin: 10px 0 10px 20px;
   border: 1px solid #c0c0c0;
   padding: 5px;
-  max-width:33%;
+  max-width: 50%;      /* increased from 33% */
 }
 
 .img-left {
@@ -39,6 +36,7 @@ html {
   margin: 10px 20px 10px 0;
   border: 1px solid #c0c0c0;
   padding: 5px;
+  max-width: 50%;      /* increased from 33% */
 }
 
 .img-center {
@@ -46,6 +44,7 @@ html {
   margin: 20px auto;
   border: 1px solid #c0c0c0;
   padding: 5px;
+  max-width: 60%;      /* added to control maximum size */
 }
 
 /* ---- Responsive Images ----*/
@@ -55,7 +54,6 @@ img {
 }
 
 /* ----- Global Styles ---- */
-
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -133,7 +131,6 @@ header.primary nav a:link,
 header.primary nav a:visited {
   color: white;
   text-decoration: none;
-  background-color: #000000;
   background-color: rgba(140, 60, 42, .7);
   padding: 8px 16px;
   border-radius: 10px;
@@ -147,59 +144,56 @@ header.primary nav a:active {
 }
 
 /* ------------- Content --------------- */
-
 section#content {
   padding: 2em 0;
 }
 
-section#content h2{
+section#content h2 {
   font-family: "Goldman", cursive;
   color: #D96B43;
 }
 
-section#content h3{
+section#content h3 {
   font-family: "Goldman", cursive;
   color: #8C3C2A;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
-section#content table{
-  width:100%;
+section#content table {
+  width: 100%;
   border: 1px solid #c0c0c0;
-  border-collapse:collapse;
+  border-collapse: collapse;
 }
 
-section#content caption{
-  font-weight:bold;
-  font-size:1.5rem;
-  margin:10px;
-  font-family: "Goldman", cursive;
+section#content caption {
+  font-weight: bold;
   font-size: 2em;
+  margin: 10px;
+  font-family: "Goldman", cursive;
   color: #33536b;
 }
 
 section#content th {
-  background:#181C1F;
-  color:#ffffff;
-  text-align:left;
-  padding:10px;
+  background: #181C1F;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
 }
 
-section#content td{
-  border:1px solid #c0c0c0;
-  padding:5px;
+section#content td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
 }
 
-section#content tr:nth-child(even){
-  background:#DCDCDC;
+section#content tr:nth-child(even) {
+  background: #DCDCDC;
 }
 
-section#content tr:hover{
-  background:#8EA6B8;
+section#content tr:hover {
+  background: #8EA6B8;
 }
 
 /* ------------- Articles --------------- */
-
 section#articles {
   background: #181c1f;
 }
@@ -231,8 +225,9 @@ section#articles h2 {
 
 #articles article.post {
   width: 100%;
+  max-width: 800px;     /* new maximum width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  padding: 10px;
+  padding: 1.5rem;      /* increased padding for breathing room */
   transition: 0.6s;
   font-size: 0.8rem;
   border-radius: 10px;
@@ -266,8 +261,8 @@ section#articles h2 {
 #articles .post a:link,
 #articles .post a:visited {
   color: #F28D52;
-  text-decoration:none;
-  text-shadow:1px 1px #000;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
 }
 
 #articles .post figure {
@@ -276,25 +271,27 @@ section#articles h2 {
 
 #articles .post img {
   border-radius: 10px;
-
+  width: 80%;         /* ensure the image fills its container */
+  height: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
 #articles ul {
   padding: 0 20px;
   text-align: center;
 }
+
 #articles li {
   margin-bottom: 20px;
 }
 
 /* ------------- Hero --------------- */
-
 #hero {
   padding: 4em 0;
 }
 
 /* ------------- Aside --------------- */
-
 /* Attribute Selector */
 aside[role="complementary"] {
   background-color: #181c1f;
@@ -306,17 +303,17 @@ aside .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap:20px;
+  gap: 20px;
 }
 
 aside article.widget {
-    flex:1;
+  flex: 1;
 }
 
 .widget.overview table {
   font-size: 0.7em;
   border-collapse: collapse;
-  width:100%;
+  width: 100%;
 }
 
 .widget.overview table td {
@@ -346,7 +343,6 @@ aside article footer {
 }
 
 /*------ Footer ------*/
-
 footer#colophon {
   background-color: #593122;
 }
@@ -365,9 +361,7 @@ footer#colophon {
   color: #fff;
 }
 
-
 /* ---------------Media Queries----------------- */
-
 @media screen and (max-width: 600px) {
   header.primary nav ul {
     flex-direction: column;
@@ -393,13 +387,7 @@ footer#colophon {
     padding: 0 0 4em 0;
   }
 
-  #articles article.post {
-    width: 100%;
-    margin-bottom: 2em;
-  }
-  
   aside .container {
-  flex-direction: column;
-}
-  
+    flex-direction: column;
+  }
 }
