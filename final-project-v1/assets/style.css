@@ -253,9 +253,11 @@ section#articles h2 {
 #articles article time,
 #articles article figcaption,
 #articles article footer {
-  font-size: 0.8em;
-  color: #c0c0c0;
+  padding: .5em;
+  font-size: .9em;
+  color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #articles .post a:link,
@@ -271,7 +273,7 @@ section#articles h2 {
 
 #articles .post img {
   border-radius: 10px;
-  width: 80%;         /* ensure the image fills its container */
+  width: 80%;         
   height: 400px;
   display: block;
   margin: 0 auto;
@@ -311,18 +313,20 @@ aside article.widget {
 }
 
 .widget.overview table {
-  font-size: 0.7em;
+  font-size: 1.0em;
   border-collapse: collapse;
   width: 100%;
 }
 
-.widget.overview table td {
-  border-bottom: 1px solid #fff;
+.widget.overview table tr {
+  border-bottom: 1px solid #fafafa;
   padding: 10px;
+  text-align: center;
+  background-color:#4e3de9
 }
 
-.widget.overview table td:nth-child(even) {
-  text-align: right;
+.widget.overview table tr:nth-child(even) {
+  background-color:#0d0746
 }
 
 aside article a:link,
@@ -340,6 +344,12 @@ aside article a:active {
 
 aside article footer {
   display: none;
+}
+
+aside article h2 {
+  font-size: 1.5em;
+  color: #fdfdfd;
+  text-align: center;
 }
 
 /*------ Footer ------*/

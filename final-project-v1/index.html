@@ -122,43 +122,96 @@
   </section>
   <section id="hero" class="container">
       <img src="https://assets.codepen.io/7248/launch.webp" alt="Launch" class="img-center" />
+
+            <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
   </section>
   <aside role="complementary">
      <div class="container">
       <article class="widget">
         <header>
-          <h2>Background</h2>
+          <h2>Info About Sets</h2>
         </header>
-        <p>
-    The NASA Mars rover program is a pioneering effort to explore the Red Planet using robotic vehicles designed to traverse its surface and conduct scientific experiments. Beginning with Sojourner in 1997, the program has since launched a series of increasingly advanced rovers, including Spirit, Opportunity, Curiosity, and Perseverance. Each mission has contributed vital data about Mars’ geology, climate, and potential for past or present life.
-  </p>
+        <details name="info">
+          <summary>Dinosaur Fossils: Tyrannosaurus rex</summary>
+          <p><a href="https://www.lego.com/en-us/product/dinosaur-fossils-tyrannosaurus-rex-76968" title = link to buy>Purchase - $249.99</a></p>
+          </details>
+        <details name="info">
+          <summary>Fast and Furious Toyota Supra MK4</summary>
+          <p><a href="https://www.lego.com/en-us/product/fast-and-furious-toyota-supra-mk4-42204" title = link to buy>Purchase - $59.99</a></p>
+        </details>
+        <details name="info">
+          <summary>Vincent van Gogh - The Starry Night</summary>
+          <p><a href="https://www.lego.com/en-us/product/vincent-van-gogh-the-starry-night-21333" title = link to buy>Purchase - $169.99</a></p>
+        </details>
+
         <footer>Widget Footer</footer>
       </article>
       <article class="widget overview">
         <header>
-          <h2>Launch Dates</h2>
+          <h2>Most Popular Lego Sets</h2>
         </header>
         <table>
   <tbody>
+    <th>Name</th>
+    <th>Release Date</th>
+    <th>Sales</th>
     <tr>
-      <td>Sojourner</td>
-      <td>December 4, 1996</td>
+      <td>7140 X-Wing Fighter</td>
+      <td>1999</td>
+      <td> >5 million</td>
     </tr>
     <tr>
-      <td>Spirit (MER-A)</td>
-      <td>June 10, 2003</td>
+      <td>10179 Ultimate Collector’s Millennium Falcon</td>
+      <td>2007</td>
+      <td> >1 million</td>
     </tr>
     <tr>
-      <td>Opportunity (MER-B)</td>
-      <td>July 7, 2003</td>
+      <td>10276 Colosseum</td>
+      <td>2020</td>
+      <td> >1 million</td>
     </tr>
     <tr>
-      <td>Curiosity</td>
-      <td>November 26, 2011</td>
+      <td>10188 Death Star</td>
+      <td>2008</td>
+      <td> >1 million</td>
     </tr>
     <tr>
-      <td>Perseverance</td>
-      <td>July 30, 2020</td>
+      <td>21319 – Central Perk</td>
+      <td>2019</td>
+      <td> >1 million</td>
     </tr>
   </tbody>
         </table>
