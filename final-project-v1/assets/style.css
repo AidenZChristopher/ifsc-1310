@@ -204,7 +204,7 @@ section#articles .container {
 
 section#articles h2{
   flex: 0 0 100%;
-  color: #E66E0B;
+  color: #df6400;
   text-align: center;
   font-size: 2em;
 }
@@ -251,7 +251,7 @@ section#articles article.post {
 
 #articles .post a:link,
 #articles .post a:visited {
-  color: #E66E0B;
+  color:#df6400;
   text-decoration:none;
   text-shadow:0px 1px #000;
 }
@@ -419,6 +419,11 @@ aside article.widget {
 .widget summary {
   font-size: 1.4em;
   margin: 0 auto;
+  text-align: center;
+}
+
+.widget h2{
+  color: #df6400
 }
 
 aside article a:link,
@@ -428,6 +433,7 @@ aside article a:visited {
   font-size: 1.2em;
   margin-top: 1.2em;
   letter-spacing: 1.2px;
+  text-align: center;
 }
 
 aside article a:hover,
@@ -446,13 +452,13 @@ aside article h2 {
 
 /*------ Footer ------*/
 footer#colophon {
-  background-color: #593122;
+  background-color: #da291cda;
 }
 
 #colophon h6 {
   padding: 20px;
   margin: 0;
-  color: #fff;
+  color: #ffd900;
   text-align: center;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -460,7 +466,7 @@ footer#colophon {
 
 #colophon h6 a:link,
 #colophon h6 a:visited {
-  color: #fff;
+  color: #fffb00;
 }
 
 * {box-sizing:border-box}
