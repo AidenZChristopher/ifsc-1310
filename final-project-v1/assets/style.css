@@ -80,7 +80,8 @@ header.primary {
   text-shadow: 2px 2px #000000;
   padding: 6em 2em;
   position: relative;
-  max-height: 350px;
+  max-height: 600px;
+  overflow: hidden;
 }
 
 header.primary::before {
