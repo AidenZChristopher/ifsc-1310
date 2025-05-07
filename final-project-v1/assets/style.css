@@ -80,7 +80,7 @@ header.primary {
   text-shadow: 2px 2px #000000;
   padding: 6em 2em;
   position: relative;
-  max-height: 600px;
+  max-height: 500px;
 }
 
 header.primary::before {
