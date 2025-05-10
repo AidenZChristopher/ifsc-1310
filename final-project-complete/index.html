@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
@@ -23,14 +25,12 @@
         </ul>
       </nav>
     </header>
-
     <section id="content" class="container">
       <h2>The Invention of LEGO Bricks</h2>
       <p>The LEGO Group was founded in 1932 in Billund, Denmark, by Ole Kirk Christiansen, a skilled carpenter facing tough economic times during the Great Depression. Originally, the company produced wooden toys, stepladders, and ironing boards. Christiansen named the company “LEGO,” derived from the Danish phrase “leg godt,” meaning “play well.” Unbeknownst to him at the time, “LEGO” also translates to “I put together” in Latin—a fitting coincidence for what the company would become.</p>
       <p>As plastic manufacturing gained popularity after World War II, LEGO began experimenting with new materials. In 1949, they released the "Automatic Binding Bricks," early versions of the interlocking pieces we recognize today. These bricks featured a unique stud‑and‑tube design, allowing for stable, stackable connections. This design was patented in 1958 and remains the core of LEGO construction even now. Though initially met with skepticism, the bricks grew in popularity due to their durability, versatility, and imaginative potential.</p>
       <p>Over the decades, LEGO transformed from a small toy manufacturer into a global icon. The company expanded into themed sets, robotics, video games, movies, and even theme parks. But its foundation lies in Ole Kirk Christiansen’s commitment to quality and creativity. What started as a small carpentry business in a Danish workshop became a universal symbol of learning through play—one brick at a time.</p>
     </section>
-
     <section id="articles">
       <div class="container">
         <h2>Changes Throughout History</h2>
@@ -127,54 +127,45 @@
         </article>
       </div>
     </section>
-
     <section id="display" class="container">
       <h2>Popular LEGO Sets</h2>
-      <div class="slideshow-container">
-        <div class="mySlides fade" style="display:block;">
-          <div class="numbertext">1 / 3</div>
-          <img src="assets/img/dinosaur.webp" alt="Lego dinosaur model" style="width:100%">
-          <div class="text">Tyrannosaurus Rex</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="assets/img/legocar.webp" alt="Lego Toyota Supra MK4" style="width:100%">
-          <div class="text">Toyota Supra MK4</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="assets/img/starrynight.webp" alt="Lego depiction of Van Gogh’s Starry Night" style="width:100%">
-          <div class="text">The Starry Night</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div class="fade container">
+        <div>
+           <a href="https://www.lego.com/en-us/product/dinosaur-fossils-tyrannosaurus-rex-76968">
+          <img src="assets/img/dinosaur.webp" alt="Lego dinosaur model">
+        </a></div>
+        <div>
+          <a href="https://www.lego.com/en-us/product/fast-and-furious-toyota-supra-mk4-42204">
+          <img src="assets/img/legocar.webp" alt="Lego Toyota Supra MK4">
+        </a></div>
+        <div>
+          <a href="https://www.lego.com/en-us/product/vincent-van-gogh-the-starry-night-21333">
+          <img src="assets/img/starrynight.webp" alt="Lego depiction of Van Gogh’s Starry Night">
+        </a></div>
+        <div>
+          <a href="https://www.lego.com/en-us/product/vincent-van-gogh-the-starry-night-21333">
+          <img src="assets/img/starrynight.webp" alt="Lego depiction of Van Gogh’s Starry Night">
+        </a></div>
       </div>
     </section>
-
     <aside role="complementary">
       <div class="container">
         <article class="widget">
           <header>
             <h2>Info About Sets</h2>
           </header>
-          <details>
-            <summary>Dinosaur Fossils: Tyrannosaurus rex</summary>
+          <button class="accordion">Dinosaur Fossils: Tyrannosaurus Rex</button>
+          <div class="panel">
             <p><a href="https://www.lego.com/en-us/product/dinosaur-fossils-tyrannosaurus-rex-76968" title="link to buy">Purchase - $249.99</a></p>
-          </details>
-          <details>
-            <summary>Fast and Furious Toyota Supra MK4</summary>
+          </div>
+          <button class="accordion">Fast and Furious Toyota Supra MK4</button>
+          <div class="panel">
             <p><a href="https://www.lego.com/en-us/product/fast-and-furious-toyota-supra-mk4-42204" title="link to buy">Purchase - $59.99</a></p>
-          </details>
-          <details>
-            <summary>Vincent van Gogh - The Starry Night</summary>
+          </div>
+          <button class="accordion">Vincent van Gogh - The Starry Night</button>
+          <div class="panel">
             <p><a href="https://www.lego.com/en-us/product/vincent-van-gogh-the-starry-night-21333" title="link to buy">Purchase - $169.99</a></p>
-          </details>
+          </div>
           <footer>Widget Footer</footer>
         </article>
 
@@ -222,11 +213,11 @@
         </article>
       </div>
     </aside>
-
     <footer id="colophon" role="contentinfo">
       <h6>&copy; 2025 Aiden Christopher | <a href="mailto:azchristophe@ualr.edu">Contact Us</a> | This website was created as a student project for educational purposes. Lego is not affiliated with or endorsing this work.</h6>
     </footer>
-
-    <script src="assets/js/slideshow.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
