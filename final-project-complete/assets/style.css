@@ -1,0 +1,483 @@
+/* Color Theme  
+#EBE71E yellow #F28D52
+#E66E0B orange#D96B43
+#E6B83C light orange / gold #593122
+#E6D057 expired mustard #8C3C2A
+
+#e6b76c88 - background color
+*/
+
+
+/* ---------------Box Sizing----------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  max-width: 50%;     
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  max-width: 50%;      
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  max-width: 60%;     
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Font Styles ---- */
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ----- Global Styles ---- */
+*{
+  font-family: "Comic Relief", system-ui;
+}
+
+header.primary {
+  background-color: #181c1f;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  padding: 6em 2em;
+  position: relative;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url(../assets/img/the-lego-brand-title.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 10px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url(../assets/img/lego_logo.jpg);
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header.primary h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #ebe81eda;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: #e6d157ab;
+}
+
+/* ------------- Content --------------- */
+
+
+section#content.container{
+  background: #da291cda;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+section#content h2 {
+  font-family: "Comic Relief", system-ui;
+  color: #ffd900;
+  text-align: center;
+  font-size: 2em;
+}
+
+#content details summary {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+#content details p, #content details ul {
+  font-size: 1.2rem;
+  text-indent: 10%;
+}
+
+#content details ul {
+  list-style-type: square;
+}
+
+/* ------------- Articles --------------- */
+section#articles {
+  background: #e6b76c88;
+  border-radius: 25px;
+  max-width: 85vw;
+  margin: 2em auto;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section#articles h2{
+  flex: 0 0 100%;
+  color: #df6400;
+  text-align: center;
+  font-size: 2em;
+}
+
+section#articles article.post {
+  flex: 0 0 49%;
+  max-width: 49%;
+  border-radius: 25px;    
+}
+
+#articles article.post {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0em 5px 40px 0em;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+#articles article.post p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #000000;
+  text-align: center;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color:#df6400;
+  text-decoration:none;
+  text-shadow:0px 1px #000;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  max-height: 150px;
+  max-width: 200x;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* ------------- Display --------------- */
+#display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:#da291cda;
+  border-radius: 25px;
+  color: #ffffff;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+}
+
+#display h2 {
+  color: #ffd900;
+  text-align: center;
+  padding: 0 0 1em 0;
+  font-size: 2.0em;
+}
+
+/* ---------- Slideshow container ---------- */
+.fade.container {
+  /* example background/tint behind each slide */
+  background-color: rgba(230, 184, 108, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 100%;
+  margin: 40px auto;
+}
+
+/* Each slide’s image styling */
+.fade.container .slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Arrow icons (injected via slick-theme.css) */
+.slick-prev:before,
+.slick-next:before {
+  color: #E66E0B;      /* orange arrows */
+  font-size: 30px;
+}
+
+/* Dots (inactive vs active) */
+.slick-dots li button:before {
+  color: #F28D52;      /* light orange dots */
+  opacity: 1;
+  font-size: 12px;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:hover:before {
+  color: #EBE71E;      /* yellow active dot */
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+/* ------------- Aside --------------- */
+/* Attribute Selector */
+aside[role="complementary"] {
+  background-color: #e6b76c88;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+aside article.widget {
+  flex: 1;
+}
+
+.widget.overview table {
+  font-size: 1.0em;
+  border-collapse: collapse;
+  width: 100%;
+}
+.widget.overview table th {
+  background-color: #da291cda;
+  color: #ffd900;
+  padding: 10px;
+  text-align: center;
+}
+
+.widget.overview table tr {
+  border: 3px solid #000000;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff
+}
+
+.widget.overview table tr:nth-child(even) {
+  background-color: #da291cda;
+  color:#ffd900;
+}
+
+.widget summary {
+  font-size: 1.4em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.widget h2{
+  color: #df6400
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #000000;
+  display: block;
+  font-size: 1.2em;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+aside article h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/*------ Footer ------*/
+footer#colophon {
+  background-color: #da291cda;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #ffd900;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #fffb00;
+}
+
+* {box-sizing:border-box}
+
+/* ---------------Media Queries----------------- */
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  aside .container {
+    flex-direction: column;
+  }
+}
